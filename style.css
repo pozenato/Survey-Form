@@ -1,0 +1,132 @@
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center
+}
+
+#title {
+  font-size: 50px;
+  color: white;
+  max-height: 30%;
+}
+
+#description {
+  margin-top: -10px;
+  padding: 15px;
+}
+
+#survey-form {
+  width: 30%;
+  min-height: 400px;
+  background-color: rgba(17, 47, 90, 1);
+  border-radius: 0.5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 200px;
+}
+
+.form-content {
+  margin: 20px;
+}
+
+.fields-content{ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;    
+  padding: 15px;
+}
+
+.radio-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input-radio {
+  width: 20px
+}
+
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input-checkbox {
+  width: 20px
+}
+
+label {
+  font-size: 26px;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+p {
+  font-size: 26px;
+  color: #FFFFFF;
+}
+
+input {
+  font-size: 26px;
+  color: dark;
+  padding: 10px;
+  width: 97%;
+  border-radius: 5px;
+  border: none;
+}
+
+select {
+  font-size: 26px;
+  color: dark;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: -20px;
+  border: none;  
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  font-size: 20px
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #37af80;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
